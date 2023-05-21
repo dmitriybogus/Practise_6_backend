@@ -12,7 +12,6 @@ class User extends Authenticatable implements AuthenticatableContract
 {
     use HasFactory;
     protected $table = 'user';
-    protected $guarded = [];
 
     public static function register(array $data)
     {
